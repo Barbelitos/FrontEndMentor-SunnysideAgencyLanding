@@ -18,6 +18,8 @@
   --fraunces: "Fraunces", serif;
 }
 
+/* General Rules */
+
 *,
 *::before,
 *::after {
@@ -32,6 +34,7 @@ html {
 body {
   font-size: 1.125rem;
   font-family: var(--barlow);
+  margin: 0;
 }
 
 h1,
@@ -47,7 +50,143 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 button {
   border: none;
-  /* background-color: transparent; */
+  background-color: transparent;
+  cursor: pointer;
 }
+
+img {
+  max-width: 100%;
+}
+
+/* Hero Section */
+
+.hero {
+  position: relative;
+  background: url(/images/mobile/image-header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.nav-list {
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+  width: 90%;
+  top: 100px;
+  left: 45%;
+  transform: translate(-45%);
+  text-align: center;
+}
+
+.nav-item {
+  margin: 2.2em 0;
+}
+
+.contact-item {
+  margin: 3em 0;
+}
+
+.contact-link {
+  background-color: var(--yellow);
+  text-transform: uppercase;
+  font-family: var(--fraunces);
+  padding: 1em 2em;
+  border-radius: 100px;
+  font-size: 1rem;
+}
+
+.hero-title {
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 2.6rem;
+  letter-spacing: 0.2em;
+}
+
+.arrow-down {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Info Section */
+
+.info-section {
+  text-align: center;
+}
+
+.info-box,
+.info-hybrid {
+  padding: 1.5em;
+}
+
+.info-title {
+  font-size: 1.8em;
+}
+
+.info-text,
+.hybrid-text {
+  line-height: 1.6em;
+  margin-bottom: 2em;
+}
+
+.info-link {
+  text-transform: uppercase;
+  font-family: var(--fraunces);
+}
+
+hr {
+  border: none;
+  height: 8px;
+  border-radius: 100px;
+  width: 140px;
+  margin-top: -5px;
+}
+
+.transform-link-underline {
+  background-color: hsla(51, 100%, 49%, 0.32);
+}
+
+.standout-link-underline {
+  background-color: hsla(7, 99%, 70%, 0.32);
+}
+
+.hybrid-design {
+  background: url("/images/mobile/image-graphic-design.jpg");
+  background-size: cover;
+  color: var(--dark-desaturated-cyan);
+}
+
+.hybrid-photo {
+  background: url("/images/mobile/image-photography.jpg");
+  background-size: cover;
+  color: var(--dark-blue);
+}
+
+.hybrid-title {
+  margin-top: 350px;
+}
+
+.hybrid-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Testimonials Section */
